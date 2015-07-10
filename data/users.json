@@ -1,0 +1,16 @@
+{
+  "Users": {
+    "usr_IEv12QuRnbU4NCBw": {
+      "ID": "usr_IEv12QuRnbU4NCBw",
+      "Email": "j@g.com",
+      "HashedPassword": "$2a$10$QMPeJWL9ust6zpbjTq7spO2/oqf2iLszoJTV4aARFI.G9EYcq1XIK",
+      "Username": "j"
+    }
+  },
+  "UserByName": {
+    "j": "usr_IEv12QuRnbU4NCBw"
+  },
+  "UserByEmail": {
+    "j@g.com": "usr_IEv12QuRnbU4NCBw"
+  }
+}

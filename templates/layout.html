@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/asserts/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Gophr</a>
+				</div>							
+				<div class="collapse navbar-collapse">
+					<p class="navbar-text navbar-right">
+					{{if .CurrentUser }}
+					<a href="/images/new" class="btn btn-primary">Add Image</a>
+					<a href="/account" class="navbar-link">Account</a>
+					<a href="/sign-out" class="navbar-link">Sign Out</a>
+					{{else}}
+					<a href="/register" class="navbar-link">Register</a>
+					<a href="/login" class="navbar-link">Login</a>
+					</p>
+					{{end}}
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			{{if .Flash}}
+			<div class="alert alert-{{.Type}}">
+				{{.Flash}}
+			</div>
+			{{end}}
+			{{yield}}
+		</div>
+	</body>
+</html>
